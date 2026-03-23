@@ -34,3 +34,5 @@ rentalService.GetActiveRentalsForUser(1);
 rentalService.GetOverdueRentals();
 
 reportService.GenerateSummaryReport();
+
+Console.WriteLine("\nDemo completed.");
