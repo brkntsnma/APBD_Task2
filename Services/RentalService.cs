@@ -58,7 +58,7 @@ namespace APBD_TASK2.Services
             int limit = user.UserType == UserType.Student ? StudentRentalLimit : EmployeeRentalLimit;
 
             if (activeRentals >= limit)
-            { Console.WriteLine($"{user.GetFullName()} has reached the rental limit ({limit})."); return; }
+            { Console.WriteLine($"Rental denied. {user.GetFullName()} has reached the limit of {limit} active rentals."); return; }
 
             var rental = new Rental(user.Id, equipment.Id, days);
             _rentals.Add(rental);
