@@ -23,7 +23,7 @@ namespace APBD_TASK2.Models
 
         public virtual string GetDescription()
         {
-            return $"[{Id}] {Name} | {Description} | Status: {Status}";
+            return $"[{Id}] {Name} | {Description} | Status: {Status} | Added: {AddedDate:dd/MM/yyyy}";
         }
     }
 }
